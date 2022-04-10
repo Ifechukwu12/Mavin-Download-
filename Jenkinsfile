@@ -6,9 +6,8 @@ pipeline {
             steps {
                 git 'https://github.com/Ifechukwu12/Mavin-Download-.git'
             }
-        }
-        
-         stage('SonarQube analysis ') {
+        } 
+        stage('SonarQube analysis ') {
             steps {
                 withSonarQubeEnv('sonar') {
                 sh 'mvn -f SampleWebApp/pom.xml clean package sonar:sonar'
