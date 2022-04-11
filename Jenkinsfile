@@ -16,7 +16,7 @@ pipeline {
         } 
         stage('Quality Gate') {
             steps {
-               waitForQualityGate abortPipline: true, credentialsld: 'Sonar-Cred'
+               waitForQualityGate abortPipline: true, credentialsId: 'Sonar-Cred'
             }
         } 
         stage('Test') {
