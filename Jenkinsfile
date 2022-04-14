@@ -37,7 +37,7 @@ pipeline {
                           "files": [
                             {
                               "pattern": "**/*.war",
-                              "target": "my-repo/"
+                              "target": "My-repo/"
                             }
                          ]
                     }''',
