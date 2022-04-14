@@ -37,12 +37,12 @@ pipeline {
                       "files": [
                         {
                           "pattern": "**/*.war",
-                          "target": "my-repo/"
+                          "target": "My-repo/"
                         }
                      ]
-                }"""
- 
-            }
+                  }"""
+              )  
+           }
         }
         stage('Deploy to tomcat') {
             steps {
